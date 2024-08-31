@@ -88,7 +88,7 @@ function createModal() {
 }
 
 async function downloadNovel(title, episodeLinks, startEpisode) {
-  let novelText = `${title}\nSPLITE___LINE\n`;
+  let novelText = `${title}SPLITE___LINE`;
   const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   const { modal, modalContent } = createModal();
   document.body.appendChild(modal);
