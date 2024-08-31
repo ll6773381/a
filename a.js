@@ -134,7 +134,7 @@ async function downloadNovel(title, episodeLinks, startEpisode) {
       return;
     }
 
-    novelText += episodeContent + "SPLITE___LINE";
+    novelText += episodeContent.trim() + "SPLITE___LINE";
 
 
     const progress = ((startingIndex - i + 1) / (startingIndex + 1)) * 100;
