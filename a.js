@@ -18,8 +18,7 @@ async function fetchNovelContent(url) {
     return null;
   }
 
-  // return cleanText(content.innerHTML);
-  return content.innerHTML;
+  return cleanText(content.innerHTML);
 }
 
 function unescapeHTML(text) {
@@ -55,7 +54,7 @@ function cleanText(text) {
   text = text.replace(/<br\s*[/]?>/g, '\n');
   text = text.replace(/<[^>]*>/g, '');
   text = text.replace(/ {2,}/g, ' ');
-  text = text.replace(/\n{2,}/g, '\n\n');
+  text = text.replace(/\n{2,}/g, '\n');
   text = unescapeHTML(text);
 
   return text;
