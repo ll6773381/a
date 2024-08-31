@@ -18,7 +18,8 @@ async function fetchNovelContent(url) {
     return null;
   }
 
-  return cleanText(content.innerHTML);
+  // return cleanText(content.innerHTML);
+  return content.innerHTML;
 }
 
 function unescapeHTML(text) {
